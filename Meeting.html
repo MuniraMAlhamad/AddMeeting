@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>طلب اجتماع</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylemeeting.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="footer-logo">
+      <img src="https://www.diabetersa.com/wp-content/uploads/2020/06/KSA-MOH-Logo.png" alt="شعار وزارة الصحة">
+    </div>
+    <h2>طلب اجتماع</h2>
+    <div class="ticket-id">رقم الطلب: LV-2025-0001</div>
+
+    <form>
+      <label for="employeeName">اسم الموظف</label>
+      <input type="text" id="employeeName" placeholder=" ادخل اسمك الكامل" required />
+
+      <label for="subject">موضوع الاجتماع</label>
+      <input type="text" id="subject" placeholder="مثال: مناقشة التدريب" required />
+
+      <label for="department">الإدارة</label>
+      <select id="department" required>
+        <option value="">-- اختر الإدارة --</option>
+        <option value="الأعلام">الأعلام</option>
+        <option value="تقنية المعلومات">تقنية المعلومات</option>
+        <option value="الموارد البشرية">الموارد البشرية</option>
+        <option value="الأداء والألتزام">الأداء والألتزام</option>
+      </select>
+
+      <label for="date">تاريخ الاجتماع</label>
+      <input type="date" id="date" required />
+
+      <label for="time">الوقت المقترح</label>
+      <input type="time" id="time" required />
+
+      <label for="notes">ملاحظات إضافية</label>
+      <textarea id="notes" rows="4" placeholder="أي تفاصيل أو نقاط للنقاش..."></textarea>
+
+      <button type="submit">إرسال الطلب</button>
+    </form>
+
+    <div class="footer">
+      <p>تقنية المعلومات والاتصالات - فرع وزارة الصحة بحفرالباطن</p>
+      <p class="sub">مركز الدعم الفني 2025</p>
+    </div>
+    
+  </div>
+</body>
+</html>
